@@ -1,0 +1,14 @@
+.ButtonGroup{
+  position: relative;
+  top: 90px;
+  left: 5%;
+  width: 50%;
+}
+.Items{
+  display: flex;
+  align-items:center;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  width: 90%;
+  margin: 5%;
+}

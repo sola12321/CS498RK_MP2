@@ -1,0 +1,16 @@
+ .SearchArea{
+   position: absolute;
+   top: 20px;
+   width: 30%;
+   right: 1%;
+   z-index: 1;
+ }
+.InputField {
+    height:40px;
+ }
+ .SearchRes{
+   position: absolute;
+   top:125px;
+   z-index: 2;
+   background-color: gray;
+ }
