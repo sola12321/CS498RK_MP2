@@ -9,7 +9,7 @@ class App extends Component {
     return (
         <Router>
           <Switch>
-            <Route exact path="https://sola12321.github.io/CS498RK_MP2/" component={Main}/>
+            <Route exact path="https://github.com/sola12321/CS498RK_MP2" component={Main}/>
             <Route path="/View/"component={View}/>
           </Switch>
         </Router>
