@@ -4,7 +4,7 @@ import {GalleryItem as GalleryItemCss} from "./GalleryItem.module.scss"
 import { Link } from 'react-router-dom'
 
 function GalleryItem(props) {
-    const detailLink = "/View/:" + props.movie.id.toString();
+    const detailLink = process.env.PUBLIC_URL + "/View/:" + props.movie.id.toString();
     return (
         <div className={GalleryItemCss}>
             <Link to={detailLink}>

@@ -7,10 +7,10 @@ import View from "../View/View";
 class App extends Component {
   render() {
     return (
-        <Router basename={process.env.PUBLIC_URL}>
+        <Router >
           <Switch>
-            <Route exact path="/" component={Main}/>
-            <Route exact path="/View/:id" component={View}/>
+            <Route path={process.env.PUBLIC_URL + "/"} component={Main}/>
+            <Route path={process.env.PUBLIC_URL + "/View/:id"} component={View}/>
           </Switch>
         </Router>
     );

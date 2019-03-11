@@ -8,7 +8,7 @@ function SearchItem(props) {
             <List.Item>
                 <Image size="mini" src={'http://image.tmdb.org/t/p/w185/'+ props.movie.poster_path} />
                 <List.Content>
-                    <Link to={"/View/:" + props.movie.id.toString()}>
+                    <Link to={process.env.PUBLIC_URL+"/View/:" + props.movie.id.toString()}>
                     <List.Header>{props.movie.title}</List.Header>
                      <List.Description>{props.movie.release_date}</List.Description>
                     </Link>
