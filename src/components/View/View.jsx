@@ -6,7 +6,8 @@ import axios from 'axios';
 class View extends Component{
     constructor(props){
         super();
-        const id = props.location.pathname.substring(7);
+        const tmp = props.location.pathname.split("/");
+        const id = tmp[tmp.length-1].substring(1);
         console.log(id);
         this.state = { id: parseInt(id), movie: null };
         this.changeContentHandler = this.changeContentHandler.bind(this);
