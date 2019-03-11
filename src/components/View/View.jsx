@@ -8,7 +8,7 @@ class View extends Component{
         super();
         const tmp = props.location.pathname.split("/");
         const id = tmp[tmp.length-1].substring(1);
-        console.log(id);
+        console.log(tmp);
         this.state = { id: parseInt(id), movie: null };
         this.changeContentHandler = this.changeContentHandler.bind(this);
     }
