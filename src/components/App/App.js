@@ -9,8 +9,8 @@ class App extends Component {
     return (
         <Router>
           <Switch>
-            <Route exact path="https://github.com/sola12321/CS498RK_MP2" component={Main}/>
-            <Route path="/View/"component={View}/>
+            <Route exact path = "/" basename={process.env.PUBLIC_URL} component={Main}/>
+            <Route path="/View/:id"component={View}/>
           </Switch>
         </Router>
     );
