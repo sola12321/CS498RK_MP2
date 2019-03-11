@@ -9,7 +9,7 @@ class App extends Component {
     return (
         <Router >
           <Switch>
-            <Route path={process.env.PUBLIC_URL + "/"} component={Main}/>
+            <Route exact path={process.env.PUBLIC_URL + "/"} component={Main}/>
             <Route path={process.env.PUBLIC_URL + "/View/:id"} component={View}/>
           </Switch>
         </Router>
