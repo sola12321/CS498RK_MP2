@@ -2,7 +2,6 @@ import React from 'react';
 import { Segment, Image, Label, Button} from 'semantic-ui-react';
 import {GalleryItem as GalleryItemCss} from "./GalleryItem.module.scss"
 import { Link } from 'react-router-dom'
-import PropTypes from 'prop-types';
 
 function GalleryItem(props) {
     const detailLink = "/View/:" + props.movie.id.toString();
@@ -17,5 +16,4 @@ function GalleryItem(props) {
         </div>
     );
 }
-
 export default GalleryItem;
